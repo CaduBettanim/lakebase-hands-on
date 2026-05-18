@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python (para futuros notebooks/apps)
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Databricks
+.databricks/
+
+# Secrets
+.env
+.env.local
+*.key
+*.pem
+
+# Logs
+*.log
