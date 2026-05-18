@@ -17,7 +17,7 @@ Base para todos os outros exercícios. Aqui você cria a instância Lakebase, co
 ## Pré-requisitos
 
 - ✅ Workspace Databricks com Lakebase habilitado
-- ✅ Permissão para criar Database Instance
+- ✅ Permissão para criar instância Lakebase
 - ✅ Catalog disponível no Unity Catalog (default: `dbacademy`)
 
 ---
@@ -28,16 +28,16 @@ Base para todos os outros exercícios. Aqui você cria a instância Lakebase, co
 
 Criar uma instância Lakebase Autoscaling — o "projeto" base que vamos usar nas próximas partes. Tudo via UI, sem terminal.
 
-### 🖱️ Passo 1: Abrir a área de Database Instances
+### 🖱️ Passo 1: Acessar o Lakebase
 
 1. No menu lateral do workspace, clique em **Compute**
-2. Na barra de abas no topo, clique em **Database Instances**
+2. Na barra de abas no topo, clique em **Lakebase**
 
 > Se a aba não aparecer, seu workspace pode não ter Lakebase habilitado. Confirme com o admin que é um workspace **serverless** com Lakebase ativado.
 
-### 🖱️ Passo 2: Criar o projeto
+### 🖱️ Passo 2: Criar a instância
 
-1. Clique no botão **Create database instance** (canto superior direito)
+1. Clique no botão **Create** (canto superior direito)
 2. Preencha:
    - **Name:** `lakebase-demo` (ou outro nome — anote para usar nos próximos passos)
    - **Tier:** `Autoscaling` (sempre prefira; o Provisioned é legado)
@@ -81,7 +81,7 @@ Quando ficar `ACTIVE`, ela está pronta para receber conexões.
 
 | Erro | Causa | Solução |
 |---|---|---|
-| Botão "Create" não aparece | Sem permissão | Pedir grant `CREATE DATABASE INSTANCE` ao admin |
+| Botão "Create" não aparece | Sem permissão | Pedir grant de criar instância Lakebase ao admin |
 | `Lakebase not available in this workspace` | Workspace não habilitado | Workspace precisa ser tipo serverless com Lakebase ON |
 | Status fica `FAILED` | Quota da conta esgotada | Verificar limites em Account Console |
 

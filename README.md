@@ -25,8 +25,8 @@ lakebase-hands-on/
 
 | Requisito | Como obter |
 |---|---|
-| Workspace Databricks com Lakebase habilitado | Em ambiente Databricks: confira em **Compute → Database Instances**. Se não aparecer, fale com o admin do workspace. |
-| Permissão para criar Database Instance | Role `account admin` ou `workspace admin`, ou grant específico de Lakebase |
+| Workspace Databricks com Lakebase habilitado | Em ambiente Databricks: confira em **Compute → Lakebase**. Se não aparecer, fale com o admin do workspace. |
+| Permissão para criar instância Lakebase | Role `account admin` ou `workspace admin`, ou grant específico de Lakebase |
 | Permissão para criar Unity Catalog objects | `CREATE CATALOG` ou usar um catalog existente com `USE CATALOG` |
 | Cluster ou compute serverless ativo | Qualquer DBR 15.4+ ou SQL Warehouse Serverless |
 
