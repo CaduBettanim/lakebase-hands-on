@@ -39,7 +39,7 @@ Criar uma instância Lakebase Autoscaling — o "projeto" base que vamos usar na
 
 1. Clique no botão **Create** (canto superior direito)
 2. Preencha:
-   - **Name:** `lakebase-demo-<seu_database>` (substitua `<seu_database>` pelo seu identificador único — em dbacademy é seu username/database name. Isso evita conflito com outros alunos)
+   - **Name:** `lakebase-demo-<seu_database>` (substitua `<seu_database>` pelo seu identificador único)
    - **Tier:** `Autoscaling` (sempre prefira; o Provisioned é legado)
    - **Capacity (min / max CU):** `0.5 / 2`
      - 0.5 CU é o mínimo possível — para scale-to-zero futuro
