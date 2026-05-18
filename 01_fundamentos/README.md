@@ -26,7 +26,7 @@ Base para todos os outros exercícios. Aqui você cria a instância Lakebase, co
 
 ### Objetivo
 
-Criar uma instância Lakebase Autoscaling — o "projeto" base que vamos usar nas próximas partes. Tudo via UI, sem terminal.
+Criar uma instância Lakebase — o "projeto" base que vamos usar nas próximas partes. Tudo via UI, sem terminal.
 
 ### 🖱️ Passo 1: Acessar o Lakebase
 
@@ -38,40 +38,35 @@ Criar uma instância Lakebase Autoscaling — o "projeto" base que vamos usar na
 ### 🖱️ Passo 2: Criar a instância
 
 1. Clique no botão **Create** (canto superior direito)
-2. Preencha:
-   - **Name:** `lakebase-demo-<seu_database>` (substitua `<seu_database>` pelo seu identificador único)
-   - **Tier:** `Autoscaling` (sempre prefira; o Provisioned é legado)
-   - **Capacity (min / max CU):** `0.5 / 2`
-     - 0.5 CU é o mínimo possível — para scale-to-zero futuro
-     - 2 CU é o máximo para a demo (suficiente pra simular carga de pedidos)
+2. Em **Display name**, digite `lakebase-demo-<seu_database>` (substitua `<seu_database>` pelo seu identificador único)
 3. Clique em **Create**
 
 ### ⏳ Passo 3: Aguardar o provisionamento
 
-A instância leva **1 a 2 minutos** para ficar pronta. Você vai ver os estados:
-- `CREATING` → `STARTING` → `ACTIVE`
-
-Quando ficar `ACTIVE`, ela está pronta para receber conexões.
+A instância fica pronta em **alguns segundos**. Quando o compute aparecer como `Active`, ela está pronta para receber conexões.
 
 > 💡 Por baixo dos panos, a Databricks criou três coisas:
 > - **Projeto** `lakebase-demo-<seu_database>` (o container)
-> - **Branch** `production` (a base de dados primária)
-> - **Endpoint** `primary` do tipo READ_WRITE (o endpoint que aceita conexões)
+> - **Branch** `production` (a base de dados primária — marcada como `Default`)
+> - **Compute** `primary` (o compute que aceita conexões)
 
-### 🖱️ Passo 4: Verificar os detalhes
+### 🖱️ Passo 4: Explorar o Project Dashboard
 
-1. Clique no nome `lakebase-demo-<seu_database>` na lista para abrir a página da instância
-2. Você verá 4 abas principais:
-   - **Overview** — status, capacidade, custo estimado
-   - **Branches** — `production` (em breve criaremos `dev`)
-   - **Endpoints** — `primary` (READ_WRITE, 0.5-2 CU)
-   - **Settings** — escalar, deletar, configurações avançadas
+Clique no nome `lakebase-demo-<seu_database>` na lista para abrir a página **Project dashboard**. Você verá 3 painéis:
 
-### 🖱️ Passo 5: Anotar o hostname (vamos usar depois)
+- **Monitoring** — gráfico de uso de CU e RAM ao longo do tempo, com seletor de branch e compute
+- **1 Branch** — lista das branches existentes (só `production` por enquanto), capacidade do compute e quem criou
+- **Project settings** — informações da instância:
+  - **Region** — onde está rodando (ex: `AWS (us-east-1)`)
+  - **Default compute size** — capacidade default (ex: `2 ↔ 4 CU`)
+  - **History retention** — janela de PITR (padrão `7 days`)
+  - **Postgres version** — versão do Postgres (atualmente `17`)
 
-1. Na aba **Endpoints**, clique em `primary`
-2. Copie o **Host** (algo como `lakebase-demo-<seu_database>.xxxxxx.databricks.com`)
-3. Guarde em algum lugar — vamos colar na próxima parte
+### 🖱️ Passo 5: Obter a string de conexão
+
+1. Clique no botão **Connect** (canto superior direito)
+2. Uma janela vai abrir com a string de conexão e as credenciais (OAuth token) para o compute `primary`
+3. Não precisa anotar nada agora — vamos voltar aqui na próxima parte quando formos conectar via SQL Editor
 
 ### O que esperar
 

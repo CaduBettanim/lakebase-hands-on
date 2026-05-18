@@ -4,13 +4,13 @@
 
 ## O que é Lakebase
 
-**Lakebase é Postgres 16 serverless gerenciado pela Databricks, nativamente integrado ao Lakehouse.**
+**Lakebase é Postgres 17 serverless gerenciado pela Databricks, nativamente integrado ao Lakehouse.**
 
 Em uma frase: é o único banco transacional que vive *dentro* do Unity Catalog — mesmo controle de acesso, mesma governança, mesma audit log que tabelas Delta.
 
 ### Os 3 pilares
 
-1. **Postgres de verdade** — Postgres 16 compatível 100%. Seu app Django/Rails/Spring funciona sem mudar uma linha.
+1. **Postgres de verdade** — Postgres 17 compatível 100%. Seu app Django/Rails/Spring funciona sem mudar uma linha.
 2. **Serverless** — autoscaling de 0.5 a 32 CU, scale-to-zero quando idle. Sem provisionar nada.
 3. **Integrado ao Lakehouse** — registrado no Unity Catalog, sincronização bidirecional com Delta, governança unificada.
 
