@@ -54,7 +54,7 @@ Todo o material usa as variáveis abaixo. Ajuste-as ao seu workspace antes de co
 
 ## Ordem sugerida
 
-1. **00_overview** — leia o `visao_geral.md` (10 min)
+1. [`00_overview/`](00_overview/) — leia o overview (10 min)
 2. **01_fundamentos** — base de tudo (~30 min)
 3. **02_seguranca** — RLS e column masking (~25 min)
 4. **03_htap** — OLTP + Analytics (~30 min)
