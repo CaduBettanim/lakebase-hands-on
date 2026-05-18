@@ -79,9 +79,9 @@ Lakebase **elimina o split**:
 
 Resultado: você pode ter `production`, `staging`, `dev-feature-x`, `dev-feature-y` — todos do mesmo dado de produção, isolados, baratos.
 
-## Os 5 cenários da demo (mapa)
+## Os 5 exercícios da demo (mapa)
 
-| Cenário | Mostra | Pra quem é |
+| Exercício | Mostra | Pra quem é |
 |---|---|---|
 | **1. Fundamentos** | Criar, conectar, fazer CRUD, branching, PITR, registrar no UC | Todos |
 | **2. Segurança** | Row-Level Security + Column Masking via UC | Compliance, Sec, CDO |

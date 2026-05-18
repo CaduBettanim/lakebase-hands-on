@@ -5,7 +5,7 @@ Material end-to-end de **Databricks Lakebase** (Postgres serverless integrado ao
 ## Como usar este material
 
 - **Demo executiva:** percorra os guias na ordem, executando só as células marcadas como obrigatórias. Pule as seções "Try it yourself".
-- **Treinamento self-paced:** execute tudo, incluindo exercícios "Try it yourself" e seção opcional do Cenário 5.
+- **Treinamento self-paced:** execute tudo, incluindo exercícios "Try it yourself" e seção opcional do Exercício 5.
 - **Reprodutível em qualquer workspace Databricks** (incluindo workspaces de cliente) — não há dependência externa nem credencial fixa.
 
 ## Estrutura
@@ -46,7 +46,7 @@ Todo o material usa as variáveis abaixo. Ajuste-as ao seu workspace antes de co
 |---|---|---|
 | `${catalog}` | `dbacademy` | Unity Catalog onde os objetos serão criados |
 | `${schema}` | `lakebase_demo` | Schema dentro do catalog |
-| `${lakebase_project}` | `lakebase-demo` | Nome da instância Lakebase criada no Cenário 1 |
+| `${lakebase_project}` | `lakebase-demo` | Nome da instância Lakebase criada no Exercício 1 |
 | `${lakebase_db}` | `demo` | Database lógico dentro da instância Lakebase |
 
 > Os notebooks declaram essas variáveis via **widgets** (`dbutils.widgets.text`) — você muda o valor uma vez no topo do notebook e ele propaga.

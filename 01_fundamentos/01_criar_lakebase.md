@@ -4,7 +4,7 @@
 
 ## Objetivo
 
-Criar uma instância Lakebase Autoscaling — o "projeto" base que vamos usar nos próximos cenários. Tudo via UI, sem terminal.
+Criar uma instância Lakebase Autoscaling — o "projeto" base que vamos usar nos próximos exercícios. Tudo via UI, sem terminal.
 
 ## O que você vai aprender
 
@@ -83,7 +83,7 @@ Quando ficar `ACTIVE`, ela está pronta para receber conexões.
 <details>
 <summary>Resposta</summary>
 
-`READ_WRITE` (read-write, só 1 por branch) e `READ_ONLY` (read replica, vários por branch). Usaremos `READ_ONLY` no Cenário 5 pra mostrar escala horizontal de leitura.
+`READ_WRITE` (read-write, só 1 por branch) e `READ_ONLY` (read replica, vários por branch). Usaremos `READ_ONLY` no Exercício 5 pra mostrar escala horizontal de leitura.
 </details>
 
 ## Próximo passo

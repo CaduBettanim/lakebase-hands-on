@@ -1,8 +1,8 @@
-# Cenário 1 — Fundamentos do Lakebase
+# Exercício 1 — Fundamentos do Lakebase
 
 🎯 **Modo Demo:** obrigatório
 
-Base para todos os outros cenários. Aqui você cria a instância Lakebase, conecta, faz operações CRUD básicas, explora branching + PITR e registra no Unity Catalog.
+Base para todos os outros exercícios. Aqui você cria a instância Lakebase, conecta, faz operações CRUD básicas, explora branching + PITR e registra no Unity Catalog.
 
 ## O que você vai aprender
 
@@ -27,6 +27,6 @@ Base para todos os outros cenários. Aqui você cria a instância Lakebase, cone
 - Permissão para criar Database Instance
 - Catalog disponível no Unity Catalog (default: `dbacademy`)
 
-## Próximo cenário
+## Próximo exercício
 
 ➡️ [`../02_seguranca/`](../02_seguranca/) — Row-Level Security + Column Masking via UC
