@@ -39,7 +39,7 @@ Criar uma instância Lakebase Autoscaling — o "projeto" base que vamos usar na
 
 1. Clique no botão **Create** (canto superior direito)
 2. Preencha:
-   - **Name:** `lakebase-demo` (ou outro nome — anote para usar nos próximos passos)
+   - **Name:** `lakebase-demo-<seu_database>` (substitua `<seu_database>` pelo seu identificador único — em dbacademy é seu username/database name. Isso evita conflito com outros alunos)
    - **Tier:** `Autoscaling` (sempre prefira; o Provisioned é legado)
    - **Capacity (min / max CU):** `0.5 / 2`
      - 0.5 CU é o mínimo possível — para scale-to-zero futuro
@@ -54,13 +54,13 @@ A instância leva **1 a 2 minutos** para ficar pronta. Você vai ver os estados:
 Quando ficar `ACTIVE`, ela está pronta para receber conexões.
 
 > 💡 Por baixo dos panos, a Databricks criou três coisas:
-> - **Projeto** `lakebase-demo` (o container)
+> - **Projeto** `lakebase-demo-<seu_database>` (o container)
 > - **Branch** `production` (a base de dados primária)
 > - **Endpoint** `primary` do tipo READ_WRITE (o endpoint que aceita conexões)
 
 ### 🖱️ Passo 4: Verificar os detalhes
 
-1. Clique no nome `lakebase-demo` na lista para abrir a página da instância
+1. Clique no nome `lakebase-demo-<seu_database>` na lista para abrir a página da instância
 2. Você verá 4 abas principais:
    - **Overview** — status, capacidade, custo estimado
    - **Branches** — `production` (em breve criaremos `dev`)
@@ -70,12 +70,12 @@ Quando ficar `ACTIVE`, ela está pronta para receber conexões.
 ### 🖱️ Passo 5: Anotar o hostname (vamos usar depois)
 
 1. Na aba **Endpoints**, clique em `primary`
-2. Copie o **Host** (algo como `lakebase-demo.xxxxxx.databricks.com`)
+2. Copie o **Host** (algo como `lakebase-demo-<seu_database>.xxxxxx.databricks.com`)
 3. Guarde em algum lugar — vamos colar na próxima parte
 
 ### O que esperar
 
-✅ **Sucesso:** Instância `lakebase-demo` com status `ACTIVE`, branch `production`, endpoint `primary`.
+✅ **Sucesso:** Instância `lakebase-demo-<seu_database>` com status `ACTIVE`, branch `production`, endpoint `primary`.
 
 ❌ **Possíveis problemas:**
 

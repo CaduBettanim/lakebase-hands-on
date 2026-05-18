@@ -44,13 +44,15 @@ Todo o material usa as variáveis abaixo. Ajuste-as ao seu workspace antes de co
 
 | Variável | Default | Descrição |
 |---|---|---|
+| `<seu_database>` | (preencher) | Identificador único do seu usuário — em ambientes compartilhados (dbacademy, treinamento com vários alunos), use seu username ou database name pessoal para evitar conflitos com outros alunos |
 | `${catalog}` | `dbacademy` | Unity Catalog onde os objetos serão criados |
-| `${schema}` | `lakebase_demo` | Schema dentro do catalog |
-| `${lakebase_project}` | `lakebase-demo` | Nome da instância Lakebase criada no Exercício 1 |
-| `${lakebase_db}` | `demo` | Database lógico dentro da instância Lakebase |
+| `${schema}` | `lakebase_demo_<seu_database>` | Schema dentro do catalog (com sufixo único por aluno) |
+| `${lakebase_project}` | `lakebase-demo-<seu_database>` | Nome da instância Lakebase criada no Exercício 1 (com sufixo único por aluno) |
+| `${lakebase_db}` | `demo` | Database lógico dentro da instância Lakebase (já isolado pela instância, sem sufixo) |
 
 > Os notebooks declaram essas variáveis via **widgets** (`dbutils.widgets.text`) — você muda o valor uma vez no topo do notebook e ele propaga.
 > Os arquivos SQL usam a sintaxe `${var}` (Databricks SQL Editor expande automaticamente quando o parâmetro está configurado).
+> O placeholder `<seu_database>` deve ser substituído pelo seu identificador único antes de criar qualquer recurso compartilhável.
 
 ## Ordem sugerida
 
