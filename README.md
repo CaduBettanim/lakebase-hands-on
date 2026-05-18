@@ -30,8 +30,6 @@ lakebase-hands-on/
 | Permissão para criar Unity Catalog objects | `CREATE CATALOG` ou usar um catalog existente com `USE CATALOG` |
 | Cluster ou compute serverless ativo | Qualquer DBR 15.4+ ou SQL Warehouse Serverless |
 
-> **Custo estimado da demo completa:** menos de US$ 5 se rodada em ~3h e derrubada depois (Lakebase Autoscaling escala para 0.5 CU quando idle).
-
 ## Convenções
 
 - **🖱️ UI** sinaliza passo via interface gráfica
